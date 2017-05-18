@@ -29,19 +29,23 @@ Writen with Angular
 
 > npm install
 
-3. go to ./front/ folder and run
+3. to insert some data to db run:
+
+> node __add-data-to-db.js
+
+4. go to ./front/ folder and run
 
 > npm install
 
-4. build front-end with command:
+5. build front-end with command:
 
 > ng build
 
- destination folder for building command is ./back/public/
+destination folder for building command is ./back/public/
 
- <br>
+<br>
 
- ## Run www server :
+## Run www server :
 
- go to ./back/ folder and run
- > npm start
+go to ./back/ folder and run
+> npm start
