@@ -17,7 +17,7 @@ function routesGuard(allowedUrlsArray) {
 }
 
 module.exports = routesGuard([
-    '/signin',
+    '/login',
     '/signup',
-    '/authorized'
+    '/authorised'
 ]);

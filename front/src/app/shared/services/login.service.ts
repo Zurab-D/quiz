@@ -11,10 +11,10 @@ import { CONFIG } from '../../config';
 
 @Injectable()
 export class LoginService {
-  private urlSignin     = CONFIG.urls.login     ; // '/login';
+  private urlLogin     = CONFIG.urls.login     ; // '/login';
   private urlSignup     = CONFIG.urls.signup    ; // '/signup';
   private urlLogout     = CONFIG.urls.logout    ; // '/logout';
-  private urlAuthorised = CONFIG.urls.authorised; // '/authorized';
+  private urlAuthorised = CONFIG.urls.authorised; // '/authorised';
 
   public user = {};
 
@@ -51,7 +51,7 @@ export class LoginService {
 
     const body = { username: formValue.nick, password: formValue.pass };
     return this.http
-               .post(this.urlSignin, body, <RequestOptionsArgs> {headers: headers, withCredentials: true})
+               .post(this.urlLogin, body, <RequestOptionsArgs> {headers: headers, withCredentials: true})
                .map(this.responseService.extractData)
                .map(res => this.user = res)
                .catch(this.responseService.handleError);

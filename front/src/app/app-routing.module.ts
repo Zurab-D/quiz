@@ -14,6 +14,8 @@ import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent, outlet: 'popup', },
 
+  //{ path: 'login', component: LoginComponent, },
+
   { path: 'signup', component: SignupComponent, outlet: 'popup', },
 
   { path: '', component: QuizListComponent,

@@ -27,7 +27,7 @@ console.log(`11111111111111111111111111111111111111111111111111111111111`);
                     return true;
                   } else {
 console.log(`222222222222222222222222222222222222222222222`);
-                    // this.router.navigate(['/login']);
+                    //this.router.navigate(['/login']);
                     this.router.navigate(['/', {outlets: {popup: 'login'} }]);
 
                     return false;

@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
         .isAuthorised()
         .subscribe( res => {
             this.authorised = res['authorised'];
+console.log(this.authorised);
             if (this.authorised) {
 console.log(`111111111111111111111111`);
               this.router.navigate(['']);

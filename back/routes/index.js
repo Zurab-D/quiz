@@ -16,8 +16,8 @@ module.exports = (app, router) => {
 
 
     router.post('/signup',          auth.signup);
-    router.post('/signin',          auth.signin);
-    router.get('/authorized',       auth.authorized);
+    router.post('/login',           auth.login);
+    router.get('/authorised',       auth.authorised);
     router.get('/logout',           auth.logout);
     // router.get('/salt/:saltuser',   auth.salt);
     // ------------------------------------------------------------------ //

@@ -11,7 +11,7 @@ import { CONFIG } from '../../config';
 
 @Injectable()
 export class SignupService {
-  private urlSignin = CONFIG.urlsAuth.urlSignin; // '/login';
+  private urlLogin = CONFIG.urlsAuth.urlLogin; // '/login';
   private urlSignup = CONFIG.urlsAuth.urlSignup; // '/signup';
 
   public user = {};
@@ -43,7 +43,7 @@ export class SignupService {
 
     const body = { username: formValue.nick, password: formValue.pass };
     return this.http
-               .post(this.urlSignin, body, <RequestOptionsArgs> {headers: headers, withCredentials: true})
+               .post(this.urlLogin, body, <RequestOptionsArgs> {headers: headers, withCredentials: true})
                .map(this.responseService.extractData)
                .map(res => this.user = res)
                .catch(this.responseService.handleError);

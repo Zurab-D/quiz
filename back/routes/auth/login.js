@@ -1,5 +1,5 @@
 const passport = require('koa-passport');
-const authorized = require('./authorized');
+const authorised = require('./authorised');
 
 module.exports = function*(next) {
     yield passport.authenticate('local',

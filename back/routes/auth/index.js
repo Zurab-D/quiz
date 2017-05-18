@@ -1,7 +1,7 @@
 ﻿'use strict';
 
-exports.signin = require('./signin');
+exports.login = require('./login');
 exports.signup = require('./signup');
-exports.authorized = require('./authorized');
+exports.authorised = require('./authorised');
 exports.logout = require('./logout');
 exports.salt = require('./salt');
