@@ -11,7 +11,7 @@ Not finished yet.
 
 > ./back
 
-Writen with Node.js & Koa.js
+Writen with Node.js & Koa.js & MongoDB
 
 
 ### Front-end
@@ -22,6 +22,10 @@ Writen with Angular
  <br>
 
 ## Installation
+
+0. download and install locally MongoDB software if you haven't yet
+
+> https://www.mongodb.com
 
 1. clone or download this repo
 
