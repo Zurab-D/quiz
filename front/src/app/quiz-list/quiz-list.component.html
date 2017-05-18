@@ -1,0 +1,13 @@
+<div *ngIf="!hideList" class="col-md-10 col-md-offset-1">
+  <h1> Quizzes list: </h1>
+  <ul class="list-unstyled list-group">
+      <li *ngFor="let quiz of quizListService.quizzes">
+          <a class="list-group-item" [routerLink]="'quizzes/' + quiz._id">
+            <app-quiz-item [quiz]="quiz"></app-quiz-item>
+          </a>
+      </li>
+  </ul>
+  <!-- <pre>{{quizListService.quizzes | json}}</pre> -->
+</div>
+
+<router-outlet></router-outlet>

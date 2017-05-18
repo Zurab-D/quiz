@@ -1,0 +1,11 @@
+ul {
+    list-style-type: none;
+}
+
+.input-answer {
+    margin-left: 40px;
+}
+
+.well {
+    position: relative;
+}

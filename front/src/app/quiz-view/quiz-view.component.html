@@ -1,0 +1,11 @@
+<div class="col-md-8 col-md-offset-2">
+    <h2>{{this.quiz.name}}</h2>
+    <div class="descr well">{{this.quiz.description}}</div>
+    <!-- <app-quiz-questions [questions]="quiz.questions"></app-quiz-questions> -->
+    <div [class]="disableContent">
+        <app-quiz-questions-item [question]="quiz.questions[currentQuestionId]" (answered)="eventAnswered(1, $event)" (answerRemoved)="eventAnswered(0, $event)"></app-quiz-questions-item>
+    </div>
+    <button class="btn btn-info" (click)="clickNext()"      *ngIf="showNextButton" [disabled]="showEndButton">Next</button>
+    <button class="btn {{endBtnClass}}" (click)="clickEndButton()" *ngIf="showEndButton" routerLink="">{{endBtnCaption}}</button>
+    <span class="total" *ngIf="showEndButton">{{this.total}}</span>
+</div>

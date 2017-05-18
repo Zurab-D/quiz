@@ -1,0 +1,8 @@
+<h3>Questions count: {{questions.length}}</h3>
+<ol>
+    <li *ngFor="let question of questions">
+        <app-quiz-questions-item [question]="question"></app-quiz-questions-item>
+    </li>
+</ol>
+
+<!-- <pre>{{questions | json}}</pre> -->

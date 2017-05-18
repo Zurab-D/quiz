@@ -1,0 +1,15 @@
+{
+  "useFake": false,
+  "urls": {
+    "quizzes": "/quizzes"
+  },
+  "fake": {
+    "urls": {
+      "quizzes": "./assets/backend/quizzes.json",
+      "login": "/login",
+      "signup": "/signup",
+      "logout": "/logout",
+      "authorised": "/authorised"
+    }
+  }
+}

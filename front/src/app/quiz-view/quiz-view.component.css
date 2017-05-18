@@ -1,0 +1,13 @@
+.descr {
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 60px;
+    background-color: #e9e9e9;
+    border-radius: 2px;
+}
+
+.disable-content {
+    opacity: .5;
+    pointer-events: none;
+    user-select: none;
+}

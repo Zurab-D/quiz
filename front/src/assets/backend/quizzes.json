@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "a1",
+    "name": "First Quiz",
+    "description": "Just a first quiz",
+    "date": "2017-01-01",
+    "questions": [
+      {
+        "question": "How are you doing?",
+        "answerOptions": [
+          {"id": 0, "text": "I'm fine"},
+          {"id": 1, "text": "Ugh?"},
+          {"id": 2, "text": "I'm OK and you?"}
+        ],
+        "correctOptions": [ 0, 2 ]
+      },
+      {
+        "question": "What is the App name?",
+        "correctAnswers": [ "quiz app", "spa quiz", "quiz spa", "quizzes" ]
+      }
+    ]
+  },
+  {
+    "_id": "a2",
+    "name": "Second Quiz",
+    "description": "This is a second quiz",
+    "date": "2017-01-02",
+    "questions": [
+      {
+        "question": "What is the weather?",
+        "answerOptions": [
+          {"id": 0, "text": "It's funy"},
+          {"id": 1, "text": "It's raining"},
+          {"id": 2, "text": "It's noon"}
+        ],
+        "correctOption": 1
+      },
+      {
+        "question": "What does 'U.S.' mean?",
+        "correctAnswers": [ "United States", "The United States", "United States Of America", "The United States Of America" ]
+      }
+    ]
+  }
+]

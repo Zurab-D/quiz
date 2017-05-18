@@ -1,0 +1,17 @@
+<div class="well">
+    <p>{{question.question}}</p>
+    <ul *ngIf="!!question.answerOptions">
+        <li *ngFor="let answerOption of question.answerOptions">
+            <label>
+                <input type="checkbox" attr.data-id="{{answerOption.id}}" *ngIf="!question.correctOption" name="answer-name" (change)="inputAnswer()">
+                <input type="radio"    attr.data-id="{{answerOption.id}}" *ngIf="question.correctOption" name="answer-name" (change)="inputAnswer()">
+                {{answerOption.text}}
+            </label>
+        </li>
+    </ul>
+    <div class="input-answer" *ngIf="showInputAnswer">
+        Enter the answer: <input type="text" (input)="inputAnswer($event.target)">
+    </div>
+</div>
+
+<!-- <pre>{{question | json}}</pre> -->
