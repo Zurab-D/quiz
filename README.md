@@ -1,5 +1,4 @@
 # Quiz app.
-
 SPA project. Created for educational purposes.<br>
 Not finished yet.
 
